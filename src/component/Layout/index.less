@@ -1,0 +1,50 @@
+.slack_layout_page{
+  width: 100%;
+  height: 100%;
+  padding: 8px 16px 24px 16px;
+  display: flex;
+  align-items: flex-end;
+  gap: 16px;
+
+  .slack_right{
+    flex: 1;
+    height: 100%;
+    // max-width: calc(100% - 176px);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    .slack_header{
+      width: 100%;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .header_title{
+
+      }
+
+      .header_login{
+        .ant-btn{
+          background-color: transparent;
+          color: #292929;
+          border: 1px solid #595959;
+          font-weight: 500;
+
+          &:hover{
+            border: 1px solid #b37feb;
+            color: #9254de;
+          }
+        }
+      }
+    }
+
+    .slack_content{
+      flex: 1;
+      height: calc(100% - 56px);
+      max-width: 100%;
+    }
+  }
+}
